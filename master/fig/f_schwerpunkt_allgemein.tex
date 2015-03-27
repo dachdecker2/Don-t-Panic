@@ -1,0 +1,67 @@
+\begin{addmargin}[0.8cm]{0cm}
+
+\setlength{\unitlength}{1cm}
+\setlength{\fboxrule}{1.25pt}
+%\setlength{\fboxsep}{0pt}
+
+\begin{picture}(16,7.4)
+
+
+\definecolor{topinnerboxcolor}{rgb}{0.68, 0.84, 0.47}
+\definecolor{leftinnerboxcolor}{rgb}{0.8, 0.97, 0.97}
+\definecolor{middleinnerboxcolor}{rgb}{1.0, 1.0, 0.7}
+\definecolor{rightinnerboxcolor}{rgb}{0.8, 0.8, 0.97}
+\definecolor{topboxcolor}{rgb}{0.6, 0.70, 0.4}
+\definecolor{sideboxgray}{gray}{0.9}
+
+%linke Seitenbox
+\put(0.5,1.2){\fcolorbox{black}{white}{\makebox(2.7,6)[l]{ } }  }
+\put(0.85,2.2){\fcolorbox{black}{sideboxgray}{\makebox(2,4)[l]{ } }  }
+
+%mittlere Box
+\put(4.4,1.2){\fcolorbox{black}{white}{\makebox(8.0,6)[l]{ } }  }
+\put(4.6,2.2){ \fcolorbox{black}{leftinnerboxcolor}{ \makebox(2,3.15)[l]{ } }  }
+\put(7.2,2.2){ \fcolorbox{black}{middleinnerboxcolor}{ \makebox(2,3.15)[l]{ } }  }
+\put(9.8,2.2){ \fcolorbox{black}{rightinnerboxcolor}{ \makebox(2,3.15)[l]{ } }  }
+\put(4.6,5.6){ \fcolorbox{black}{topinnerboxcolor}{ \makebox(7.2, 0.6)[l]{ } }  }
+
+%rechte Seitenbox
+\put(13.5,1.2){\fcolorbox{black}{white}{\makebox(2.7,6)[l]{ } }  }
+\put(13.85,2.2){\fcolorbox{black}{sideboxgray}{\makebox(2,4)[l]{ } }  }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Nebenbeschriftung
+\put(0.97,6.7){\textsf{Masterarbeit}}
+\put(14.0,6.9){\textsf{Ergänzungs-}}
+\put(14.4,6.5){\textsf{module}}
+\put(1.5,4.2){\textsf{30 CP}}
+\put(14.5,4.2){\textsf{3-6 CP}}
+
+%Hauptbeschriftung
+\put(7.55,6.7){\textsf{Informatik$^{1,2}$}}
+\put(5.23,5.75){ \textsf{\textbf{24-27 CP} frei aus allen drei Gebieten}}
+
+\put(5.5,4.2){\textsf{20 CP}}
+\put(5.15,3.1){\scriptsize \textsf{Informatik der}}
+\put(5.48,2.7){\scriptsize \textsf{Systeme}}
+
+\put(8.05,4.2){\textsf{20 CP}}
+\put(7.65,3.1){\scriptsize \textsf{Grundlagen der}}
+\put(7.95,2.7){\scriptsize \textsf{Informatik}}
+
+\put(10.65,4.2){\textsf{20 CP}}
+\put(10.45,3.1){\scriptsize \textsf{Angewandte}}
+\put(10.55,2.7){\scriptsize \textsf{Informatik}}
+
+\put(7.1,1.45){\textsf{Summe: 84-87 CP}}
+
+%Fussnoten
+\put(1.0,0.4){\scriptsize \textsf{1) Maximal 27 CP aus den einführenden Modulen}}
+\put(1.0,0.1){\scriptsize \textsf{2) Muss mindestens ein Praktikum und ein Seminar aus der Informatik enthalten}}
+
+\end{picture}
+
+\end{addmargin}
