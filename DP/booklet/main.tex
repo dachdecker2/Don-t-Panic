@@ -1,0 +1,62 @@
+\documentclass[12pt,a4paper]{scrartcl}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\usepackage[german]{babel}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{wrapfig} %Grafiken von Text umfliessen lassen
+\usepackage{multicol} %zweispaltiger Text
+\usepackage{multirow} %mehrere Tabellenzeilen zu einer zusammenfassen
+\usepackage{rotating} %Rotation von Schrift
+\usepackage{wallpaper} %Bilder auch ans Hintergrundbilder einbinden
+\usepackage{hyperref} %Um in der PDF-Version klickbare Hyperlinks zu haben
+\usepackage{color} % für Farben im allgemeinen
+\usepackage{colortbl} %farbige Tabellen
+\usepackage[final]{pdfpages}
+\usepackage[a4paper,left=15mm,right=15mm, top=12mm, bottom=26mm]{geometry} %Seitenränder
+\usepackage{paralist}
+
+\makeatletter
+\providecommand*{\input@path}{{..}}
+\g@addto@macro\input@path{{../}}% append % if you cant override it
+\graphicspath{{../}}
+
+\makeatother
+
+\newcommand*\Newpage{\newpage\null\thispagestyle{empty}\newpage}
+
+% Load any packages needed for this document
+\begin{document}
+
+\newpage
+\section{Mini Don't Panic}
+\subsection*{Ein Stundenplan zum Ausfüllen}
+\input{tabellen/stundenplan}
+\newpage
+
+\begin{sidewaysfigure}
+    \centering
+    \includegraphics[scale=1]{bilder/Cubeecraft_Mushroom_Super_mario.jpg}
+\end{sidewaysfigure}
+
+%\begin{sidewaysfigure}
+%    \centering
+%    \includegraphics[scale=1]{bilder/super_mario_papercraft.jpg}
+%\end{sidewaysfigure}
+
+\newpage
+
+\subsection*{Wo ist was?}
+    \input{artikel/orte}
+    \clearpage
+
+\subsection*{ It's dangerous to go alone! Take this. }
+    \vspace{2.5cm}
+    \begin{center}
+    \fbox{
+    \includegraphics[width=0.8\linewidth]{bilder/KarteB}}
+    \\Bockenheim Map
+    \end{center}
+    \pagebreak
+
+\end{document}
